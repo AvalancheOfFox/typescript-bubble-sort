@@ -2,7 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Sorter_1 = require("./Sorter");
 var NumberCollection_1 = require("./NumberCollection");
+var CharacterCollection_1 = require("./CharacterCollection");
 var numArray = new NumberCollection_1.NumberCollection([1000, 1023, -2, 1, 0]);
 var sorter1 = new Sorter_1.Sorter(numArray);
+var string = new CharacterCollection_1.CharacterCollection('xxDdfAbc');
+var sorter2 = new Sorter_1.Sorter(string);
 sorter1.sort();
-console.log(numArray.data);
+sorter2.sort();
