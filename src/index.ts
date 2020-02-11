@@ -1,9 +1,12 @@
-import { Sorter } from './Sorter';
 import { NumberCollection } from './NumberCollection';
 import { CharacterCollection } from './CharacterCollection';
+import { LinkedList } from './LinkedList';
 const numArray = new NumberCollection([1000, 1023, -2, 1, 0]);
-const sorter1 = new Sorter(numArray);
 const string = new CharacterCollection('xxDdfAbc');
-const sorter2 = new Sorter(string);
-sorter1.sort();
-sorter2.sort();
+const ll = new LinkedList();
+string.sort();
+ll.add(4);
+ll.add(0);
+ll.add(-2);
+ll.add(1);
+ll.sort();
